@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://aadhibbc1991.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>void</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		html {
+			height: 100%;
+			width: 100%;
+		}
+		body {
+			height: 85%;
+			width: 98%;
+			background: #303030;
+		}
+		h2, a, div {
+			font-family: verdana;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function updateURL(inp) {
+			var query = document.getElementById(inp).value;
+			var urls = document.getElementById('urlcollection').value;
+			var urlobjects = urls.replace(/\r/g, '').split('\n');
+			var outstring = '';
+			for (var u=0; u<urlobjects.length; u++) {
+				var currenturl = urlobjects[u];
+				var currentprefix = currenturl.split('lisa')[0];
+				var currentdelimitor = currenturl.split('lisa')[1].split('ann')[0];
+				var currentsufix = currenturl.split('lisa')[1].split('ann')[1];
+
+				var currentresultingurl = currentprefix + query.replace(/ /g, currentdelimitor) + currentsufix;
+
+				// var outstring = outstring + '<br><a>'+currentresultingurl+'<a><br><iframe src="'+currentresultingurl+'"" style="width: 100%; height: 250px;"></iframe>';
+				var outstring = outstring + '<div style="display:inline-block;width: 100%; height: 100%;overflow-y: hidden;"><button onclick="window.open(\''+currentresultingurl+'\', target='+"'"+'_blank'+"'"+')" style="width:99%; padding: 4px;border: 1px solid #303030; border-radius: 5px;background: orange;">Visit</button><br><iframe id="framenum'+u+'" src="'+currentresultingurl+'"" style="width: 99%; height: 93%;" loading="lazy"></iframe></div>';
+			}
+			document.getElementById('tabframes').innerHTML = outstring;
+		}
+
+		function preprocess() {
+			console.log(window.location.href);
+			var url = window.location.href;
+			var url = url.toLowerCase();
+			if (url.indexOf('search=') > -1) {
+				var keywords = url.split('search=')[1].split('&')[0].replace(/\+/g, ' ');
+				console.log("["+keywords+"]");
+				document.getElementById('inputquery').value = keywords;
+				updateURL('inputquery');
+			}
+		}
+
+	</script>
+</head>
+<body onload="preprocess()">
+	<a href="https://aadhibbc1991.github.io/"><h2 style="display: inline-block;">Void</h2><h2 style="color: orange;display: inline-block;">Hub</h2></a>
+	<input type="text" id="inputquery" style="width: 80%;border: 1px solid #303030; border-radius: 5px;padding: 4px;" onchange="updateURL('inputquery')"/>
+	<button onclick="updateURL('inputquery')" style="padding: 4px;border: 1px solid #303030; border-radius: 5px;background: orange;"><b>Search</b></button>
+	<div style="height: 100%;"><div id="tabframes" style="white-space: nowrap; height: 100%; max-width: 100%; overflow-x: auto; overflow-y: hidden;"></div></div>
+<!-- <textarea id="urlcollection" style="display: none;">https://spankbang.party/s/lisa+ann/
+https://www.pussyspace.com/lisa-ann/
+https://noodlemagazine.com/video/lisa+ann
+https://milf300.com/search?q=lisa+ann
+https://www.milffox.com/search/?q=lisa+ann
+https://gekso.xyz/video/lisa-ann
+https://pleasemom.net/search/lisa-ann/
+https://xnxx.com.se/video/lisa-ann
+https://kompoz2.com/find/lisa-ann/
+https://pornozavr.net/lisa-ann.html
+https://pornzog.com/search/?s=lisa+ann
+https://zeenite.com/search/lisa-ann/</textarea> -->
+
+<textarea id="urlcollection" style="display: none;">https://spankbang.party/s/lisa+ann/
+https://www.pussyspace.com/lisa-ann/
+https://noodlemagazine.com/video/lisa+ann
+https://milf300.com/search?q=lisa+ann
+https://www.milffox.com/search/?q=lisa+ann
+https://gekso.xyz/video/lisa-ann
+https://pleasemom.net/search/lisa-ann/
+https://xnxx.com.se/video/lisa-ann
+https://kompoz2.com/find/lisa-ann/
+https://pornozavr.net/lisa-ann.html
+https://pornzog.com/search/?s=lisa+ann
+https://zeenite.com/search/lisa-ann/
+https://iporntv.net/searches.php?word=lisa+ann
+https://bigfuck.tv/s/lisa%20ann/
+https://porn-hub.live/search/lisa-ann/
+https://matures.porn/search?q=lisa+ann
+https://hdhole.com/lisa-ann-videos
+https://hqporner.com/?q=lisa+ann
+https://en.vidmo.pro/search.php?q=lisa%20ann&amp;start=6
+https://morefunforyou.com/?s=lisa+ann</textarea>
+
+<!-- <textarea id="urlcollection" style="display: none;"></textarea> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
