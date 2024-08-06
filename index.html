@@ -33,7 +33,7 @@
 				var currentresultingurl = currentprefix + query.replace(/ /g, currentdelimitor) + currentsufix;
 
 				// var outstring = outstring + '<br><a>'+currentresultingurl+'<a><br><iframe src="'+currentresultingurl+'"" style="width: 100%; height: 250px;"></iframe>';
-				var outstring = outstring + '<div style="display:block;width: 100%; height: 500px;"><button onclick="window.open(\''+currentresultingurl+'\', target='+"'"+'_blank'+"'"+')" style="width:99%; padding: 4px;border: 1px solid #303030; border-radius: 5px;background: orange;">Visit</button><br><iframe id="framenum'+u+'" src="'+currentresultingurl+'"" style="width: 99%; height: 93%;" loading="lazy"></iframe></div>';
+				var outstring = outstring + '<div style="display:block;width: 100%; height: 500px;"><button onclick="window.open(\''+currentresultingurl+'\', target='+"'"+'_blank'+"'"+')" style="width:99%; padding: 4px;border: 1px solid #303030; border-radius: 5px;background: orange;">Visit</button><br><iframe id="framenum'+u+'" src="'+currentresultingurl+'"" style="width: 99%; height: 93%;" loading="lazy" allowfullscreen></iframe></div>';
 			}
 			document.getElementById('tabframes').innerHTML = outstring;
 		}
@@ -54,7 +54,7 @@
 </head>
 <body onload="preprocess()">
 	<u>
-		<a href="https://aadhibbc1991.github.io/sites/"><h2 style="display: inline-block;">Void-</h2><h2 style="color: orange;display: inline-block;">Hub</h2></a>
+		<a href="https://aadhibbc1991.github.io/sites/"><h2 style="display: inline-block;">Void-</h2><h2 style="color: orange;display: inline-block;">Hub 0.6</h2></a>
 	</u>
 	<input type="text" id="inputquery" style="width: 80%;border: 1px solid #303030; border-radius: 5px;padding: 4px;" onchange="updateURL('inputquery')"/>
 	<button onclick="updateURL('inputquery')" style="padding: 4px;border: 1px solid #303030; border-radius: 5px;background: orange;"><b>Search</b></button>
